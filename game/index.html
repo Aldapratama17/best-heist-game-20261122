@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vaultlight</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { background: #0a0e17; display: flex; justify-content: center; align-items: center; min-height: 100vh; font-family: 'IBM Plex Mono', 'JetBrains Mono', 'Fira Mono', monospace; }
+    canvas { display: block; border: 2px solid #1a1f2e; box-shadow: 0 0 40px rgba(0,0,0,0.8); }
+    @media (max-width: 1200px) {
+      canvas { transform: scale(0.85); transform-origin: top center; }
+    }
+    @media (max-width: 900px) {
+      canvas { transform: scale(0.65); transform-origin: top center; }
+    }
+  </style>
+</head>
+<body>
+  <canvas id="game" width="1180" height="660"></canvas>
+  <script type="module" src="./main.js"></script>
+</body>
+</html>
